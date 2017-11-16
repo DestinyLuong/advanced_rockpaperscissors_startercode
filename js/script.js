@@ -29,4 +29,48 @@
 // DOCUMENT READY FUNCTION
 $(document).ready( function(){
         
+  var shoot = ["rock" , "paper" , "scissors"];
+      Math.floor(Math.random() * 3);  
+        
+        
+        
+        
+        
+        
+        
+  var name = $("#input").val();    
+        
+        
+  var choice = 
+        
+  var ai =
+
+  if (choice === "scissors" && ai === "rock"){
+          $().show();
+          $().hide();
+  }  else if (choice === "scissors" && ai === "scissors"){
+          $().show();
+          $().hide();
+  }  else if (choice === "scissors" && ai === "paper"){
+          $().show();
+          $().hide();
+  }  else if (choice === "paper" && ai === "scissors") {
+          $().show();
+          $().hide();
+  }  else if (choice === "paper" && ai === "paper"){
+          $().show();
+          $().hide();
+  }  else if (choice === "paper" && ai === "rock"){
+          $().show();
+          $().hide();
+  }  else if (choice === "rock" && ai === "paper"){
+          $().show();
+          $().hide();     
+  }  else if (choice === "rock" && ai === "rock"){
+          $().show();
+          $().hide();
+  }  else if (choice === "rock" && ai === "scissors"){
+          $().show();
+          $().hide();
+  }
 });
