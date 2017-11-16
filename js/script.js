@@ -46,31 +46,32 @@ $(document).ready( function(){
   var ai =
 
   if (choice === "scissors" && ai === "rock"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "scissors" && ai === "scissors"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "scissors" && ai === "paper"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "paper" && ai === "scissors") {
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "paper" && ai === "paper"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "paper" && ai === "rock"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "rock" && ai === "paper"){
-          $().show();
+          $("#").show();
           $().hide();     
   }  else if (choice === "rock" && ai === "rock"){
-          $().show();
+          $("#").show();
           $().hide();
   }  else if (choice === "rock" && ai === "scissors"){
-          $().show();
+          $("#").show();
           $().hide();
   }
+  
 });
