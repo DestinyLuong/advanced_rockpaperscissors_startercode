@@ -16,7 +16,7 @@
       <!-- Link Javascript File here -->
       <script src="js/script.js"></script>
       
-      
+      <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Londrina+Outline|Pacifico|Quicksand|Sacramento" rel="stylesheet">
       
       
   </head>
@@ -32,11 +32,13 @@
      -->
     <div class="container text-center">
     <h1>ROCK PAPER SCISSORS</h1>
-    <p>Choose Your Weapon.</p>
+    <p id="words">Choose Your Weapon.</p>
     </div>
-    <div class="cards">
+    <div class="input">
       <input id="input" placeholder="Your Name">
+      <button id="name" class="btn btn-primary">Submit</button>
     </div>
+    
     
     <div class="row">
       <div class="col-sm-2">
@@ -44,22 +46,32 @@
     </div>
     
     <div class="row">
-      <div class="col-sm-8" id="cards">
-        <img id="rock" src="rock.jpg">
+      <div class="col-sm-4" id="cards">
         <p>A ROCK?! How ONIX-pected!</p>
-        <img id="leaf" src="leaf.jpg">
-        <p>Sticks and Stone would break my bones, but leaves would never hurt me.</p>
-        <img id="stick" src="stick.png">
+        <img id="rock" src="rock.jpg">
+      </div>  
+      <div class="col-sm-4" id="cards">
         <p>How FANTA-STICK!</p>
+        <img id="stick" src="stick.png">
+      </div>
+      <div class="col-sm-4" id="cards">
+        <p>Sticks and Stone would break my bones, but leaves would never hurt me.</p>
+        <img id="leaf" src="leaf.jpg">
       </div>
     </div>
     
+    <div id="row" class="input">
+      <input id="yourchoice" placeholder="Your Choice">
+      <button id="choice" class="btn btn-primary">Submit</button>
+    </div>
+ 
+    
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-sm-4">
       </div>
     </div>
   </body>
-  <div id="End Card">
+  <div id="endcard">
     <div id = "draw">
       <p> It's a DRAW </p>
     </div>

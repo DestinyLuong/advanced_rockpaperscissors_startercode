@@ -41,36 +41,40 @@ $(document).ready( function(){
   var name = $("#input").val();    
         
         
-  var choice = 
+  var choice = $("#yourchoice").val();
+  
+  var array = ["scissors" , "paper" , "rock"];
         
-  var ai =
+  var random = Math.floor(Math.random() * 3);
+  
+  var ai = array[random];
 
   if (choice === "scissors" && ai === "rock"){
-          $("#").show();
+          $("#rockaiwin").show();
           $().hide();
   }  else if (choice === "scissors" && ai === "scissors"){
-          $("#").show();
+          $("#draw").show();
           $().hide();
   }  else if (choice === "scissors" && ai === "paper"){
-          $("#").show();
+          $("#scissorsuserwin").show();
           $().hide();
   }  else if (choice === "paper" && ai === "scissors") {
-          $("#").show();
+          $("#scissorsaiwin").show();
           $().hide();
   }  else if (choice === "paper" && ai === "paper"){
-          $("#").show();
+          $("#draw").show();
           $().hide();
   }  else if (choice === "paper" && ai === "rock"){
-          $("#").show();
+          $("#paperuserwin").show();
           $().hide();
   }  else if (choice === "rock" && ai === "paper"){
-          $("#").show();
+          $("#paperaiwin").show();
           $().hide();     
   }  else if (choice === "rock" && ai === "rock"){
-          $("#").show();
+          $("#draw").show();
           $().hide();
   }  else if (choice === "rock" && ai === "scissors"){
-          $("#").show();
+          $("#rockuserwin").show();
           $().hide();
   }
   

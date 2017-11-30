@@ -1,8 +1,40 @@
-#input{
-    text-align: center;
+.input{
+    text-align: left;
+    margin-left: 42%;
     color: grey;
 }
 
 img{
     height: 20%;
+    text-align: left;
 }
+
+#endcard{
+    display: none;
+}
+
+p {
+ text-align: center;   
+}
+
+h1 {
+    margin-top: 3%;
+    font-family: "Londrina Outline";
+    font-size: 800%;
+}
+#cards{
+    text-align: center;
+    margin-top: 3%;
+    font-family: "Quicksand";
+}
+#rock , #paper , #scissors{
+    text-align: center;
+}
+button {
+    font-family: "Cabin Sketch";
+}
+#words{
+ font-family: "Pacifico";
+}
+
+
