@@ -28,54 +28,55 @@
 
 // DOCUMENT READY FUNCTION
 $(document).ready( function(){
-        
-  var shoot = ["rock" , "paper" , "scissors"];
-      Math.floor(Math.random() * 3);  
-        
-        
-        
-        
-        
-        
-        
-  var name = $("#input").val();    
-        
-        
-  var choice = $("#yourchoice").val();
-  
-  var array = ["scissors" , "paper" , "rock"];
-        
-  var random = Math.floor(Math.random() * 3);
-  
-  var ai = array[random];
 
-  if (choice === "scissors" && ai === "rock"){
-          $("#rockaiwin").show();
-          $().hide();
-  }  else if (choice === "scissors" && ai === "scissors"){
-          $("#draw").show();
-          $().hide();
-  }  else if (choice === "scissors" && ai === "paper"){
-          $("#scissorsuserwin").show();
-          $().hide();
-  }  else if (choice === "paper" && ai === "scissors") {
-          $("#scissorsaiwin").show();
-          $().hide();
-  }  else if (choice === "paper" && ai === "paper"){
-          $("#draw").show();
-          $().hide();
-  }  else if (choice === "paper" && ai === "rock"){
-          $("#paperuserwin").show();
-          $().hide();
-  }  else if (choice === "rock" && ai === "paper"){
-          $("#paperaiwin").show();
-          $().hide();     
-  }  else if (choice === "rock" && ai === "rock"){
-          $("#draw").show();
-          $().hide();
-  }  else if (choice === "rock" && ai === "scissors"){
-          $("#rockuserwin").show();
-          $().hide();
-  }
+        
+        
+        
+        
+    $("choice").click(function(){        
+        
+      var name = $("#input").val();    
+            
+            
+      var choice = $("#yourchoice").val();
+      
+      var array = ["scissors" , "paper" , "rock"];
+            
+      var random = Math.floor(Math.random() * 3);
+      
+      var ai = array[random];
+      
+      console.log(array[random]);
+    
+      if (choice === "scissors" && ai === "rock"){
+              $("#rockaiwin").show();
+              $().hide();
+      }  else if (choice === "scissors" && ai === "scissors"){
+              $("#draw").show();
+              $().hide();
+      }  else if (choice === "scissors" && ai === "paper"){
+              $("#scissorsuserwin").show();
+              $().hide();
+      }  else if (choice === "paper" && ai === "scissors") {
+              $("#scissorsaiwin").show();
+              $().hide();
+      }  else if (choice === "paper" && ai === "paper"){
+              $("#draw").show();
+              $().hide();
+      }  else if (choice === "paper" && ai === "rock"){
+              $("#paperuserwin").show();
+              $().hide();
+      }  else if (choice === "rock" && ai === "paper"){
+              $("#paperaiwin").show();
+              $().hide();     
+      }  else if (choice === "rock" && ai === "rock"){
+              $("#draw").show();
+              $().hide();
+      }  else if (choice === "rock" && ai === "scissors"){
+              $("#rockuserwin").show();
+              $().hide();
+      }
   
+    });
+
 });
