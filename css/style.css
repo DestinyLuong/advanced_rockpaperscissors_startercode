@@ -1,6 +1,5 @@
 .input{
     text-align: center;
-
     color: grey;
 }
 
@@ -9,9 +8,7 @@ img{
     text-align: left;
 }
 
-#endcard{
-    display: none;
-}
+
 
 p {
  text-align: center;   

@@ -30,19 +30,17 @@
 $(document).ready( function(){
 
         
+    var name = $("#input").val(); 
+   
         
         
-        
-    $("choice").click(function(){        
-        
-      var name = $("#input").val();    
-            
+    $("#choice").click(function(){       
             
       var choice = $("#yourchoice").val();
-      
-      var array = ["scissors" , "paper" , "rock"];
             
       var random = Math.floor(Math.random() * 3);
+      
+      var array = ["scissors" , "paper" , "rock"];
       
       var ai = array[random];
       
