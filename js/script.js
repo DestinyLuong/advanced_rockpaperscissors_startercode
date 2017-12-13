@@ -30,9 +30,18 @@
 $(document).ready( function(){
 
         
-    var name = $("#input").val(); 
+     
    
+   
+    $("#name").click(function(){
+        $("#yourchoice").show();
+        $("#choice").show();
+        var name = $("#input").val();
         
+        $("#words").html(name + " vs AI");
+        $("#name").hide();
+        $("#input").hide();
+    });
         
     $("#choice").click(function(){       
             
@@ -40,41 +49,116 @@ $(document).ready( function(){
             
       var random = Math.floor(Math.random() * 3);
       
-      var array = ["scissors" , "paper" , "rock"];
+      var array = ["stick" , "leaf" , "rock"];
       
       var ai = array[random];
       
       console.log(array[random]);
     
-      if (choice === "scissors" && ai === "rock"){
+      if (choice === "stick" && ai === "rock"){
               $("#rockaiwin").show();
-              $().hide();
-      }  else if (choice === "scissors" && ai === "scissors"){
+              
+              $("#draw").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "stick" && ai === "stick"){
               $("#draw").show();
-              $().hide();
-      }  else if (choice === "scissors" && ai === "paper"){
+              
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "stick" && ai === "leaf"){
               $("#scissorsuserwin").show();
-              $().hide();
-      }  else if (choice === "paper" && ai === "scissors") {
+              
+              $("#draw").hide();
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "leaf" && ai === "stick") {
               $("#scissorsaiwin").show();
-              $().hide();
-      }  else if (choice === "paper" && ai === "paper"){
+              
+              $("#draw").hide();
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#error").hide();
+      }  else if (choice === "leaf" && ai === "leaf"){
               $("#draw").show();
-              $().hide();
-      }  else if (choice === "paper" && ai === "rock"){
+              
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "leaf" && ai === "rock"){
               $("#paperuserwin").show();
-              $().hide();
-      }  else if (choice === "rock" && ai === "paper"){
+              
+              $("#draw").hide();
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "rock" && ai === "leaf"){
               $("#paperaiwin").show();
-              $().hide();     
+              
+              $("#draw").hide();   
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
       }  else if (choice === "rock" && ai === "rock"){
               $("#draw").show();
-              $().hide();
-      }  else if (choice === "rock" && ai === "scissors"){
+              
+              $("#rockaiwin").hide();
+              $("#rockuserwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      }  else if (choice === "rock" && ai === "stick"){
               $("#rockuserwin").show();
-              $().hide();
+              
+              $("#draw").hide();
+              $("#rockaiwin").hide();
+              $("#paperuserwin").hide();
+              $("#paperaiwin").hide();
+              $("#scissorsuserwin").hide();
+              $("#scissorsaiwin").hide();
+              $("#error").hide();
+      } else {
+            $("#error").show();
+            
+            $("#scissorsaiwin").hide();
+            $("#draw").hide();
+            $("#rockaiwin").hide();
+            $("#rockuserwin").hide();
+            $("#paperuserwin").hide();
+            $("#paperaiwin").hide();
+            $("#scissorsuserwin").hide();
       }
   
     });
+    
+
 
 });

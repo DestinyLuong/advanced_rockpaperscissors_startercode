@@ -8,7 +8,9 @@ img{
     text-align: left;
 }
 
-
+#yourchoice , #choice {
+    display: none;
+}
 
 p {
  text-align: center;   
@@ -35,4 +37,13 @@ button {
  font-family: "Pacifico";
 }
 
+#draw , #scissorsaiwin , #scissorsuserwin , #paperaiwin , #paperuserwin,
+#rockaiwin, #rockuserwin{
+    display: none;
+}
 
+
+#error{
+    display: none;
+    text-align: center;
+}
